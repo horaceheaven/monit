@@ -1,16 +1,16 @@
 package main
 
 import (
-	"net/http/httptest"
 	"fmt"
-	"testing"
-	"net/http"
 	"io"
+	"net/http"
+	"net/http/httptest"
+	"testing"
 )
 
 var (
-	server *httptest.Server
-	reader io.Reader
+	server   *httptest.Server
+	reader   io.Reader
 	endpoint string
 )
 
