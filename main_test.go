@@ -36,8 +36,6 @@ func TestMonitorHandler(t *testing.T) {
 		t.Error("expect http %s, but got %s", http.StatusOK, res.StatusCode)
 	}
 
-	defer res.Body.Close()
-
 	cache := res.Header.Get("Cache-Control")
 
 	if cache != "no-cache" {
